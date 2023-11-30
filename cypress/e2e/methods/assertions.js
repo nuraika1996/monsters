@@ -10,11 +10,20 @@ describe('as a user I should be able to login to the hr app', () => {
 
         cy.get('[type="submit"]').click()
 
-        
-//         cy.get('[href="/web/index.php/pim/viewPimModule"]').click()
-// c
-        // cy.get('[class="oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module"]').then((x) => {
+        cy.contains('Admin').click()
 
+        cy.get("[class='oxd-icon bi-plus oxd-button-icon']").click()
+
+        cy.get('.oxd-select-text-input')
+
+            .eq(0)
+            .click()
+            .get('.oxd-select-option')
+            .contains('Admin')
+            .click()
+
+        
+        
 
         //     expect('PIM').to.equal(x.text())
 

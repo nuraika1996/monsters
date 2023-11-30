@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "regression": "npx cypress run",
+    "smoke": "npx cypress run --spec cypress/e2e/methods/check.js --headed --browser chrome",
+    "regression_dashboard": "npx cypress run a117a1b5-1aa8-473d-a4f1-cc1ee5a26a1a",
+    "smoke_dashboard":"npx cypress run --spec cypress/e2e/methods/check.js --record --key a117a1b5-1aa8-473d-a4f1-cc1ee5a26a1a"
+
+  }, 
+
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.6.0"
+    "cypress": "^12.6.0",
+    "mochawesome": "^7.1.3"
   }
 }
