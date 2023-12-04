@@ -11,5 +11,17 @@ module.exports = defineConfig({
     viewportHeight: 1080,
     viewportWidth: 1630,
 
+    retries: {
+
+      openMode: 0,
+      runMode: 2 
+
   },
+
+  reporter: 'mochawesome',
+  projectId: "r8swiu"
+
+},
+
+
 });

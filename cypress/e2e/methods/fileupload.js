@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 describe('practicing upload', () => {
-    it('hi', () => {
+    it('should upload a file', () => {
 
         cy.visit('https://the-internet.herokuapp.com/upload')
 
