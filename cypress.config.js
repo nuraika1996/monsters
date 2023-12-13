@@ -5,6 +5,9 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    // screenshotOnRunFailure: true,
+    // trashAssetsBeforeRuns: true,
+
     baseUrl: "https://opensource-demo.orangehrmlive.com", 
     specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}",
 
@@ -14,13 +17,20 @@ module.exports = defineConfig({
     retries: {
 
       openMode: 0,
-      runMode: 2 
+      runMode: 0 
 
   },
 
-  reporter: 'mochawesome',
-  projectId: "r8swiu"
+  // // reporter: 'mochawesome',
+  // projectId: "r8swiu",
 
+
+//   env : {
+//  qa: "https://www.goodle.com/",
+//  uat:"https://www.yahoo.com/?guccounter=1",
+//  bank: "https://parabank.parasoft.com/parabank/register.htm",
+ 
+//   }
 },
 
 

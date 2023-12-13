@@ -11,19 +11,41 @@ describe('as a user I should be able to login to the hr app', () => {
         cy.get('[type="submit"]').click()
 
         cy.contains('Admin').click()
+    
+       
+        // cy.get("[class='oxd-icon bi-plus oxd-button-icon']").click()
+        // cy.get('.oxd-select-text-input')
+  
+        //      .eq(0)
+        //      .click()
+        //      .get('.oxd-select-option')
+        //      .contains('ESS')
+        //      .click()
+        //      cy.get('.oxd-select-text-input')
+        //      .eq(1)
+        //      .click()
+        //      .get('.oxd-select-option')
+        //      .contains('Enabled')
+        //      .click()
+            
+            
+        //     cy.get('[placeholder="Type for hints..."]').type('Virat Kohli')
+        //     cy.get('[role="listbox"]').contains('Virat Kohli').click()
+        //     cy.get('[class="oxd-input oxd-input--active"]').eq(1).type('nuraika')
+        //     cy.get('[class="oxd-input oxd-input--active"]').eq(2).type('nuraika123')
+        //     cy.get('[class="oxd-input oxd-input--active"]').eq(2).type('nuraika123')
+        //     cy.get('[class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"]').click()
+       
 
-        cy.get("[class='oxd-icon bi-plus oxd-button-icon']").click()
-
-        cy.get('.oxd-select-text-input')
-
-            .eq(0)
-            .click()
-            .get('.oxd-select-option')
-            .contains('Admin')
-            .click()
-
-        
-        
+cy.get('[type="submit"]').click()
+cy.contains('PIM').click()
+cy.get('[class="oxd-button oxd-button--medium oxd-button--secondary"]').click()
+        cy.get('[placeholder="First Name"]').type('Nurai')
+        cy.get('[placeholder="Last Name"]').type('Kylychbekova')
+        cy.get('[class="oxd-input oxd-input--active"]')
+        .eq(1)
+        .click()
+        cy.get('[type="submit"]').click()
 
         //     expect('PIM').to.equal(x.text())
 

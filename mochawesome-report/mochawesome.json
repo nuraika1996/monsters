@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2023-11-30T02:13:16.993Z",
-    "end": "2023-11-30T02:13:26.722Z",
-    "duration": 9729,
+    "start": "2023-11-30T16:24:18.972Z",
+    "end": "2023-11-30T16:24:47.432Z",
+    "duration": 28460,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a8c6ca67-280e-48f3-b1e9-eaa4b8fde747",
+      "uuid": "bbfcf643-fda6-4fd5-8f2c-fa993f045dcc",
       "title": "",
       "fullFile": "cypress/e2e/methods/hooks.js",
       "file": "cypress/e2e/methods/hooks.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "43fe33d9-6699-42d7-9e8b-952f60dd2154",
+          "uuid": "09ce7645-8f3e-4ec2-95fd-6288d89bba23",
           "title": "practicing hooks",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,17 @@
               "title": "Test 1",
               "fullTitle": "practicing hooks Test 1",
               "timedOut": null,
-              "duration": 5960,
+              "duration": 24049,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.contains(\"Admin\").click();",
               "err": {},
-              "uuid": "2c77bb63-860d-4e63-a0df-72ce8d703aea",
-              "parentUUID": "43fe33d9-6699-42d7-9e8b-952f60dd2154",
+              "uuid": "16fa351a-d6b1-4baa-b658-5ad6a0450658",
+              "parentUUID": "09ce7645-8f3e-4ec2-95fd-6288d89bba23",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Test 2",
               "fullTitle": "practicing hooks Test 2",
               "timedOut": null,
-              "duration": 3733,
+              "duration": 4383,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.contains(\"PIM\").click();",
               "err": {},
-              "uuid": "79087bff-ed3d-4ab3-be90-e84a365c296b",
-              "parentUUID": "43fe33d9-6699-42d7-9e8b-952f60dd2154",
+              "uuid": "8456f8d8-adf0-4113-aea3-b765ec55c29f",
+              "parentUUID": "09ce7645-8f3e-4ec2-95fd-6288d89bba23",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2c77bb63-860d-4e63-a0df-72ce8d703aea",
-            "79087bff-ed3d-4ab3-be90-e84a365c296b"
+            "16fa351a-d6b1-4baa-b658-5ad6a0450658",
+            "8456f8d8-adf0-4113-aea3-b765ec55c29f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 9693,
+          "duration": 28432,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
