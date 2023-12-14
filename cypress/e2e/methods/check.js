@@ -11,8 +11,17 @@ describe('', () => {
 
         cy.contains('Admin').click()
 
-        cy.get('.oxd-table-cell.oxd-padding-cell div div label input ').eq(0).check({ force: true })
+        // cy.get('.oxd-table-cell.oxd-padding-cell div div label input ').eq(0).check({ force: true })
 
-        cy.get('.oxd-table-cell.oxd-padding-cell div div label input ').eq(0).uncheck({ force: true })
+        // cy.get('.oxd-table-cell.oxd-padding-cell div div label input ').eq(0).uncheck({ force: true })
+
+      
+        
+        cy.get(".oxd-button.oxd-button--medium.oxd-button--secondary")
+        .eq(1)
+        .invoke('text')
+        .should('includes',' Add ')
+            
+       
     });
 });
